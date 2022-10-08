@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import {Text, View} from 'react-native';
+import { Text, View } from 'react-native';
 
 const App = () => {
   return (

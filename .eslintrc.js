@@ -7,9 +7,15 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       rules: {
+        'prettier/prettier': ['error', { singleQuote: true }, { usePrettierrc: true }],
+        'react-hooks/exhaustive-deps': 'error',
         '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
-        'no-undef': 'off',
+      },
+      globals: {
+        JSX: true,
+        NodeJS: true,
+        Response: true,
       },
     },
   ],
