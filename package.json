@@ -7,7 +7,10 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "android:clean": "cd android && ./gradlew clean && cd ..",
+    "svg:transform": "./node_modules/@svgr/cli/bin/svgr --native --ignore-existing --typescript --memo -d src/assets/icons src/assets/svgs",
+    "install:pods": "cd ios && pod install && cd .."
   },
   "dependencies": {
     "react": "18.1.0",
@@ -17,6 +20,7 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@svgr/cli": "^6.4.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.70.4",
