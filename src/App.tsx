@@ -1,18 +1,11 @@
+import Navigator from 'navigation/Navigator';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { enableFreeze } from 'react-native-screens';
+
+enableFreeze(true);
 
 const App = () => {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'white',
-      }}>
-      <Text>Aldo App</Text>
-    </View>
-  );
+  return <Navigator />;
 };
 
 export default App;
